@@ -1,0 +1,47 @@
+{
+  "name": "flambr_new",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.6.2",
+    "@react-native-community/geolocation": "^2.0.2",
+    "@react-native-community/netinfo": "^4.4.0",
+    "@react-native-firebase/app": "^6.0.3",
+    "@react-native-firebase/auth": "^6.0.3",
+    "@react-native-firebase/database": "^6.0.3",
+    "@react-native-firebase/firestore": "^6.0.3",
+    "@react-native-firebase/storage": "^6.0.3",
+    "react": "16.9.0",
+    "react-native": "0.61.3",
+    "react-native-card-stack-swiper": "^1.1.5",
+    "react-native-country-picker-modal": "^1.8.1",
+    "react-native-elements": "^1.2.7",
+    "react-native-gifted-chat": "^0.11.3",
+    "react-native-image-crop-picker": "^0.26.1",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-paper": "^3.1.1",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-segmented-control-tab": "^3.4.1",
+    "react-native-vector-icons": "^6.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/runtime": "^7.6.3",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.57.0",
+    "react-test-renderer": "16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
