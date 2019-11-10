@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Nov 07 22:37:06 IST 2019
+#Sun Nov 10 23:14:47 IST 2019
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=F\:\\Projects\\flambr_new\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\release\\0

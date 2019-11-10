@@ -150,6 +150,8 @@ export default class ChatPeople extends Component {
     }
 
     retry() {
+        this.setState({ errorMessage: 'ERR_UNKNWON', loading: true, error: false });
+
         this.checkInternet()
             .then(() => this.getModalVisible())
             .then(() => this.getUserDocument())
@@ -166,6 +168,8 @@ export default class ChatPeople extends Component {
     }
 
     retryNoPeople() {
+        this.setState({ loading: true, errorMessage: 'ERR_UNKNOWN', error: false });
+        
         this.getUserDocument()
             .then((userDocRef) => this.getMatchedPeopleReferences(userDocRef))
             .then((docsArray) => this.getDataFromReferences(docsArray))
