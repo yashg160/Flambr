@@ -1,6 +1,6 @@
 import { GiftedChat, Bubble } from 'react-native-gifted-chat';
 import React, { Component } from 'react';
-import { Button, Text, View, ActivityIndicator, ToastAndroid } from 'react-native';
+import { View, ActivityIndicator } from 'react-native';
 import database, {firebase} from '@react-native-firebase/database';
 import storage from '@react-native-firebase/storage';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -108,7 +108,7 @@ export default class Chat extends Component {
             this.messagesRef.push({
                 text: message[i].text,
                 user: message[i].user,
-                createdAt: firebase.database().getServerTime()
+                createdAt: firebase.database.ServerValue.TIMESTAMP
             });
         }
     }
@@ -119,7 +119,7 @@ export default class Chat extends Component {
         this.messagesRef.push({
             text: message.text,
             user: message.user,
-            createdAt: firebase.database().getServerTime(),
+            createdAt: firebase.database.ServerValue.TIMESTAMP,
             image: message.image,
             messgageType: 'image'
         });
@@ -168,7 +168,7 @@ export default class Chat extends Component {
             cropperStatusBarColor: Colors.primary,
             cropperToolbarColor: Colors.primary,
             mediaType: 'photo',
-            compressImageQuality: 0.3
+            compressImageQuality: 0.2
         }).then(image => {
             if (image !== null) {
                 this.setState({ image, sendingImage: true });

@@ -69,12 +69,9 @@ export default class Register extends Component {
                         Actions.replace('pinRegister');
                     }
                     else {
-
-                        setTimeout(() => {
-                            this.setState({ loading: false });
-                            ToastAndroid.show('Code sent', ToastAndroid.SHORT);
-                            Actions.push('registerCode', { confirmationResult: confirmationResult, numberToVerify: numberToVerify });
-                        }, 15000);
+                        this.setState({ loading: false });
+                        ToastAndroid.show('Code sent', ToastAndroid.SHORT);
+                        Actions.push('registerCode', { confirmationResult: confirmationResult, numberToVerify: numberToVerify });
                     }
                 });
             })
