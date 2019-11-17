@@ -4,5 +4,5 @@ Flambr is a dating app, developed using React Native and Firebase. It is current
 ![Home Page](images/home.png)
 ![SignIn Page](images/signin.png)
 ![Main Page](images/main.png)
-![Settings Page](settings/home.png)
-![Messages Page](Messages/home.png)
+![Settings Page](images/settings.png)
+![Messages Page](images/messages.png)
