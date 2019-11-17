@@ -141,7 +141,7 @@ export default class ProfileSetup extends Component {
                 var prox = `prox=${latitude},${longitude},250`;
 
                 //TODO: Replace API key and APP codes
-                fetch("https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?" + prox + "&mode=retrieveAddresses&maxresults=1&gen=9&app_id=lWzIoo7zWjWAFoyAgi0H&app_code=yKLq0TaA3MXNOVVuCuSyWQ")
+                fetch("https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?" + prox + "&mode=retrieveAddresses&maxresults=1&gen=9&app_id=<Your App Id>&app_code=<You App Code>")
                     .then(resp => resp.json())
                     .then(resp => {
                         console.log(this.TAG, 'Response:', resp);

@@ -114,7 +114,7 @@ export default class Main extends Component {
 
                     var prox = `prox=${lat},${lon},250`;
 
-                    fetch("https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?" + prox + "&mode=retrieveAddresses&maxresults=1&gen=9&app_id=lWzIoo7zWjWAFoyAgi0H&app_code=yKLq0TaA3MXNOVVuCuSyWQ")
+                    fetch("https://reverse.geocoder.api.here.com/6.2/reversegeocode.json?" + prox + "&mode=retrieveAddresses&maxresults=1&gen=9&app_id=<You App ID>&app_code=<You App Code>")
                         .then((resp) => resp.json())
                         .then((resp) => {
                             this.setState({ resp });
