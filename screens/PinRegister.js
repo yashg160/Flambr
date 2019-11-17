@@ -22,7 +22,7 @@ export default class Pin extends Component{
         const { pin } = this.state;
 
         if (pin.length < 5) {
-            ToastAndroid.show('Enter a longer PIN', ToastAndroid.LONG);
+            ToastAndroid.show('Enter a 5 digit PIN', ToastAndroid.LONG);
             return;
         }
         else if (pin == '') {

@@ -8,6 +8,7 @@ import auth from '@react-native-firebase/auth';
 import CountryPicker from 'react-native-country-picker-modal';
 import { Actions } from 'react-native-router-flux';
 import AsyncStorage from '@react-native-community/async-storage';
+import { setTimeout } from 'core-js';
 
 export default class Register extends Component {
     TAG = 'Register Screen:';
@@ -19,7 +20,7 @@ export default class Register extends Component {
             callingCode: '91',
             phoneNumber: '',
             loading: false,
-            errorMessage: 'UNKNOWN_ERROR'
+            errorMessage: 'ERR_UNKNOWN'
         }
     }
 
@@ -59,7 +60,7 @@ export default class Register extends Component {
 
         auth().signInWithPhoneNumber(numberToVerify, true)
             .then(confirmationResult => {
-                
+                ToastAndroid.show('Code sent', ToastAndroid.SHORT);
                 //The code has been sent to the entered phone number. Proceed to verify the input code
                 auth().onAuthStateChanged(user => {
                     if (user) {
@@ -69,9 +70,14 @@ export default class Register extends Component {
                         Actions.replace('pinRegister');
                     }
                     else {
-                        this.setState({ loading: false });
-                        ToastAndroid.show('Code sent', ToastAndroid.SHORT);
-                        Actions.push('registerCode', { confirmationResult: confirmationResult, numberToVerify: numberToVerify });
+                        
+                        setTimeout(() => {
+                            if (Actions.currentScene == 'register') {
+                                this.setState({ loading: false });
+                                Actions.push('registerCode', { confirmationResult: confirmationResult, numberToVerify: numberToVerify });
+                            }
+                        }, 10000)
+                        
                     }
                 });
             })
@@ -85,7 +91,7 @@ export default class Register extends Component {
     handleVerifyPhoneNumber() {
 
         //First set the button and textInput disabled to prevent multiple clicks
-        this.setState({ loading: true });
+        this.setState({ loading: true, errorMessage: 'ERR_UNKNOWN' });
 
         this.checkInternet()
             .then(() => this.verifyPhoneNumber())

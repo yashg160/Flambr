@@ -65,7 +65,7 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Yash G
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\621fcda011cb6836cfc6f9f9ad3b5f50\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\222b4882adef6272d271b93292e88ce6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\8c622edbb1d02fd3e2a6974383d24791\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\4e7b725bafe73fd06faefba98e62535a\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.core:core:1.2.0-beta02] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\53815ce0d2fecea5ff7adab9c3a4e7ae\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\43ba876db7e42e344c2783f014cf7d43\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\d6bb78953552da637b8a2df94a008fe6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\bfe7dd1caa96bc1df6db3ec328958236\AndroidManifest.xml:17:1-22:12
@@ -186,12 +186,12 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\User
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\36edb134599e8aa51c89fdf54454da29\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\3aa44116d423c679627c81bd09d6b9f3\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\3aa44116d423c679627c81bd09d6b9f3\AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\4e7b725bafe73fd06faefba98e62535a\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\4e7b725bafe73fd06faefba98e62535a\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0-beta02] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\53815ce0d2fecea5ff7adab9c3a4e7ae\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0-beta02] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\53815ce0d2fecea5ff7adab9c3a4e7ae\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\43ba876db7e42e344c2783f014cf7d43\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\43ba876db7e42e344c2783f014cf7d43\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.2.0-beta01] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\4e7b725bafe73fd06faefba98e62535a\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.2.0-beta02] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\53815ce0d2fecea5ff7adab9c3a4e7ae\AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from F:\Projects\flambr_new\android\app\src\main\AndroidManifest.xml:9:7-39
 		ADDED from F:\Projects\flambr_new\android\app\src\main\AndroidManifest.xml:9:7-39
@@ -364,8 +364,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Yash
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\222b4882adef6272d271b93292e88ce6\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\8c622edbb1d02fd3e2a6974383d24791\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\8c622edbb1d02fd3e2a6974383d24791\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\4e7b725bafe73fd06faefba98e62535a\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\4e7b725bafe73fd06faefba98e62535a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0-beta02] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\53815ce0d2fecea5ff7adab9c3a4e7ae\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0-beta02] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\53815ce0d2fecea5ff7adab9c3a4e7ae\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\43ba876db7e42e344c2783f014cf7d43\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\43ba876db7e42e344c2783f014cf7d43\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Yash Gupta\.gradle\caches\transforms-2\files-2.1\d6bb78953552da637b8a2df94a008fe6\AndroidManifest.xml:20:5-44

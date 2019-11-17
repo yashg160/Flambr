@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, ActivityIndicator, ScrollView, ToastAndroid, PermissionsAndroid } from 'react-native';
+import { Text, View, ActivityIndicator, ScrollView, ToastAndroid, PermissionsAndroid, Alert } from 'react-native';
 import { Header, Avatar, Icon, Input, Button } from 'react-native-elements';
 import * as Colors from '../assets/Colors';
 import ImagePicker from 'react-native-image-crop-picker';
@@ -55,6 +55,17 @@ export default class ProfileSetup extends Component {
             .catch(error => console.log(this.TAG, error));
     }
 
+    handleAvatarLongPress() {
+        Alert.alert(
+            'Flambr',
+            'Remove profile picture? You can change it later',
+            [
+                { text: 'NO' },
+                { text: 'YES', onPress: () => this.setState({ pictureSelected: false, response: null }), style: 'cancel' }
+            ]
+        );
+    }
+
     async checkInternet() {
         const status = await NetInfo.fetch();
         if (!status.isConnected) {
@@ -74,7 +85,7 @@ export default class ProfileSetup extends Component {
         console.log(this.TAG, 'Called uploadAvatar');
         if (!this.state.pictureSelected) {
             console.log(this.TAG, 'Avatar was empty');
-            ToastAndroid.show('Avatar was null', ToastAndroid.LONG);
+            ToastAndroid.show('No avatar selected. Change it later.', ToastAndroid.LONG);
             return;
         }
         else {
@@ -336,6 +347,7 @@ export default class ProfileSetup extends Component {
                             renderPlaceholderContent={<Icon name='person' type='material-icon' size={28} />}
                             containerStyle={{ marginTop: 40, marginBottom: 10, alignSelf: 'center' }}
                             onLongPress={() => this.handleAvatarLongPress()}
+                            onPress={() => this.openImagePicker()}
                         />
                         :
                         <Avatar
@@ -346,6 +358,7 @@ export default class ProfileSetup extends Component {
                             renderPlaceholderContent={<Icon name='person' type='material-icon' size={28} />}
                             containerStyle={{ marginTop: 40, marginBottom: 10, alignSelf: 'center' }}
                             onLongPress={() => this.handleAvatarLongPress()}
+                            onPress={() => this.openImagePicker()}
                         />
 
                     }

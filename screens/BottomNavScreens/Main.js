@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, ToastAndroid, ActivityIndicator, PermissionsAndroid, ImageBackground, Dimensions, Share, Modal } from 'react-native';
+import { View, Text, ToastAndroid, ActivityIndicator, PermissionsAndroid, ImageBackground, Dimensions, Share } from 'react-native';
 import firestore from '@react-native-firebase/firestore';
 import NetInfo from '@react-native-community/netinfo';
 import Geolocation from '@react-native-community/geolocation';
 import AsyncStorage from '@react-native-community/async-storage';
 import CardStack, { Card } from 'react-native-card-stack-swiper';
-import { Button, Header, Icon } from 'react-native-elements';
+import { Button, Icon } from 'react-native-elements';
 import * as Colors from '../../assets/Colors';
 import LinearGradient from 'react-native-linear-gradient';
 import { Actions } from 'react-native-router-flux';
@@ -39,6 +39,8 @@ export default class Main extends Component {
             getMoreDisabled: true,
             swiper: null
         }
+
+        this.interstitial = null;
 
     }
 

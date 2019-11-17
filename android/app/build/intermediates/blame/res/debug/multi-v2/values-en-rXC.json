@@ -4,20 +4,20 @@
             "outputFile": "F:\\Projects\\flambr_new\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Yash Gupta\\.gradle\\caches\\transforms-2\\files-2.1\\4e7b725bafe73fd06faefba98e62535a\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\Yash Gupta\\.gradle\\caches\\transforms-2\\files-2.1\\53815ce0d2fecea5ff7adab9c3a4e7ae\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "202",
-                        "endOffsets": "253"
+                        "endColumns": "203",
+                        "endOffsets": "254"
                     },
                     "to": {
                         "startLines": "30",
                         "startColumns": "4",
                         "startOffsets": "5682",
-                        "endColumns": "202",
-                        "endOffsets": "5880"
+                        "endColumns": "203",
+                        "endOffsets": "5881"
                     }
                 },
                 {
