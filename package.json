@@ -19,7 +19,7 @@
     "@react-native-firebase/firestore": "^6.0.3",
     "@react-native-firebase/storage": "^6.0.3",
     "react": "16.9.0",
-    "react-native": "0.61.3",
+    "react-native": "0.62.3",
     "react-native-card-stack-swiper": "^1.1.5",
     "react-native-country-picker-modal": "^1.8.1",
     "react-native-elements": "^1.2.7",
